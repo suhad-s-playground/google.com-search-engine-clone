@@ -85,7 +85,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+
+    padding-top: 175px;
 }
 
 #apps:hover {
@@ -227,12 +228,14 @@ footer{
     border-top: 1px solid lightgray;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 20px;/* not sure */
+    padding: 15px 20px;/* not sure */
 }
 #footer-bottom a{
     text-decoration: none;
     font-size: 15px;
     color: #70757a;
+    padding: 15px;
+
 }
 #footer-bottom a:hover{
     text-decoration: underline;
@@ -245,4 +248,14 @@ footer{
 }
 #footer-bottom>div:last-child{
     /* background-color: brown; */
+}
+@media all and (max-width: 1200px){
+    #footer-bottom{ 
+        justify-content: space-around; 
+    } 
+}
+@media all and (max-width: 715px){
+    #last-icons{
+        padding-top: 20px;
+    }
 }
